@@ -82,4 +82,4 @@ dist-ssr
 
 # misc
 package-lock.json
-vite.congig.js
+vite.config.js
