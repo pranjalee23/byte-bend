@@ -1,0 +1,28 @@
+// Brand Colors
+$primary: #6d25db;
+$primary-light1: #8a51e2;
+$primary-light2: #a77ce9;
+$primary-light3: #c5a8f1;
+$primary-dark1: #571eaf;
+$primary-dark2: #411683;
+$primary-dark3: #2c0f58;
+
+// Base Colors
+$white: #ffffff;
+$black: #000000;
+
+// Border Radius
+$border-radius-xs: 4px;
+$border-radius-sm: 8px;
+$border-radius-base: 16px;
+$border-radius-lg: 24px;
+$border-radius-xl: 32px;
+
+// Font Mixins
+@mixin font-base {
+  font-family: 'Montserrat', 'Noto Sans', 'Aptos', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.4;
+}

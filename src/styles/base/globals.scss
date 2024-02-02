@@ -1,0 +1,36 @@
+body {
+  @include font-base;
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: $black;
+}
+
+.main-body-wrapper {
+  width: 1280px;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.button-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+}
