@@ -16,10 +16,14 @@ code {
 
 a {
   text-decoration: none;
-  color: $black;
+  color: $text-dark;
 }
 
-.main-body-wrapper {
+.main-body-outer-wrapper {
+  transition: all 0.4s ease-in-out;
+}
+
+.main-body-inner-wrapper {
   width: 1280px;
   max-width: 1280px;
   margin: 0 auto;
@@ -27,10 +31,21 @@ a {
   display: flex;
   flex-direction: column;
   gap: 32px;
+  // background-color: $white;
 }
 
 .button-wrapper {
   display: flex;
   flex-direction: row;
   gap: 16px;
+}
+
+// Dark Theme
+.dark {
+  background-color: $dark-theme;
+  color: $text-light;
+
+  // button {
+  //   background-color: $primary-light1;
+  // }
 }

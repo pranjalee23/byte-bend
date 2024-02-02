@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import BrandLogo from '../../../assets/logo.svg?react';
 import Button from '../../ui/Button';
 
-const Navbar = () => {
+const Navbar = ({toggleTheme}) => {
   return (
     <>
       <nav>
@@ -27,7 +27,7 @@ const Navbar = () => {
             </Link>
           </div>
           <div className='nav-toggle-mode'>
-            <Button title='Dark mode' />
+            <Button title='Dark mode' onClick={toggleTheme} />
           </div>
         </div>
       </nav>

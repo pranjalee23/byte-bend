@@ -7,7 +7,7 @@ const TextArea = ({ value, onChange }) => {
 
   return (
     <>
-      <textarea className='input-textarea' id='' placeholder='Enter text to analyze' value={value} onChange={onChange} cols={60} rows={10}></textarea>
+      <textarea className='input-textarea' placeholder='Enter text to analyze' value={value} onChange={onChange} cols={60} rows={10}></textarea>
     </>
   );
 };

@@ -12,10 +12,19 @@ textarea.input-textarea {
   border-radius: $border-radius-sm;
   background-color: $white;
   resize: vertical;
+  color: $text-dark;
 
   &:focus {
     outline: 0;
     border-color: $primary-light3;
     box-shadow: 0 0 12px $primary-light3;
+  }
+}
+
+// Dark Theme
+.dark {
+  textarea {
+    background-color: $dark-theme-light1;
+    color: $text-light;
   }
 }

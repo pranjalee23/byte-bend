@@ -1,6 +1,16 @@
 header {
   padding: 32px 0;
-  border-bottom: 1px solid lightgrey;
+  background-color: $white;
+  // border-bottom: 0.5px solid #efefef;
+  position: sticky;
+  top: 0px;
+  transition: all 0.4s ease-in-out;
+
+  &.header-scrolled {
+    box-shadow: 0 8px 32px rgba($color: $black, $alpha: 0.08);
+    background-color: $white;
+    // border: none;
+  }
 
   .header-wrapper {
     width: 1280px;
@@ -22,6 +32,7 @@ header {
           align-self: center;
           font-weight: 700;
           text-transform: capitalize;
+          color: $text-dark;
 
           span {
             color: $primary;
@@ -39,12 +50,43 @@ header {
         .nav-link-wrapper {
           display: flex;
           flex-direction: row;
-          gap: 16px;
+          gap: 32px;
           // border-right: 1px solid gray;
 
           .nav-link-item {
             align-self: center;
+            color: $text-dark;
           }
+        }
+      }
+    }
+  }
+}
+
+// Dark Theme
+header.dark {
+  background-color: $dark-theme-dark1;
+
+  &.header-scrolled {
+    box-shadow: 0 8px 32px rgba($color: $black, $alpha: 0.32);
+    background-color: $dark-theme-dark1;
+  }
+
+  .header-wrapper {
+    .nav-brand-wrapper {
+      .nav-title {
+        color: $text-light;
+
+        span {
+          color: $primary-light1;
+        }
+      }
+    }
+
+    .nav-right-wrapper {
+      .nav-link-wrapper {
+        .nav-link-item {
+          color: $text-light;
         }
       }
     }
