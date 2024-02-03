@@ -15,7 +15,7 @@ const Header = ({theme, toggleTheme}) => {
     <>
       <header className={`${scroll ? 'header-scrolled' : 'header-normal'} ${theme}`}>
         <div className='header-wrapper'>
-          <Navbar toggleTheme={toggleTheme} />
+          <Navbar theme={theme} toggleTheme={toggleTheme} />
         </div>
       </header>
       <Outlet />

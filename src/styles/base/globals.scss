@@ -38,6 +38,8 @@ a {
   display: flex;
   flex-direction: row;
   gap: 16px;
+  flex-wrap: wrap;
+  align-content: space-around;
 }
 
 // Dark Theme

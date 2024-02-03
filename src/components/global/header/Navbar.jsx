@@ -1,8 +1,9 @@
 import { Link } from 'react-router-dom';
 import BrandLogo from '../../../assets/logo.svg?react';
 import Button from '../../ui/Button';
+import { Sun, Moon } from 'feather-icons-react';
 
-const Navbar = ({toggleTheme}) => {
+const Navbar = ({ theme, toggleTheme }) => {
   return (
     <>
       <nav>
@@ -27,7 +28,7 @@ const Navbar = ({toggleTheme}) => {
             </Link>
           </div>
           <div className='nav-toggle-mode'>
-            <Button title='Dark mode' onClick={toggleTheme} />
+            <Button title={theme === 'dark' ? <Sun stroke-width={1} /> : <Moon stroke-width={1}/>} onClick={toggleTheme} style={{ backgroundColor: 'transparent', border: 'none', borderRadius: '50%', color: theme === 'light' ? '#23272f' : '#f6f7f9', padding: '0' }} />
           </div>
         </div>
       </nav>

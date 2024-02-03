@@ -7,7 +7,7 @@ button.custom-button-primary {
   background-color: $primary;
   color: $white;
   font-size: 15px;
-  font-weight: 600;
+  // font-weight: 600;
   cursor: pointer;
   display: flex;
   flex-direction: row;
@@ -15,8 +15,12 @@ button.custom-button-primary {
   align-self: flex-start;
   width: -moz-fit-content;
   width: fit-content;
+  height: 100%;
   transition: all 0.2s ease-in-out;
   text-transform: capitalize;
+  justify-content: center;
+  box-sizing: border-box;
+  flex-grow: 1;
 
   &:hover {
     background-color: $primary-dark1;

@@ -28,6 +28,12 @@ header {
         gap: 8px;
         flex-basis: 20%;
 
+        .nav-logo {
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+        }
+
         .nav-title {
           align-self: center;
           font-weight: 700;
@@ -57,6 +63,16 @@ header {
             align-self: center;
             color: $text-dark;
           }
+        }
+
+        .nav-toggle-mode {
+          display: flex;
+          flex-direction: row;
+          align-self: center;
+          justify-content: center;
+          height: 32px;
+          width: 32px;
+          color: $dark-theme-light2;
         }
       }
     }
