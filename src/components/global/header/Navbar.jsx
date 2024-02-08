@@ -28,7 +28,7 @@ const Navbar = ({ theme, toggleTheme }) => {
             </Link>
           </div>
           <div className='nav-toggle-mode'>
-            <Button title={theme === 'dark' ? <Sun stroke-width={1} /> : <Moon stroke-width={1}/>} onClick={toggleTheme} style={{ backgroundColor: 'transparent', border: 'none', borderRadius: '50%', color: theme === 'light' ? '#23272f' : '#f6f7f9', padding: '0' }} />
+            <Button title={theme === 'dark' ? <Sun stroke-width={1} /> : <Moon stroke-width={1} />} onClick={toggleTheme} style={{ backgroundColor: 'transparent', border: 'none', borderRadius: '50%', color: theme === 'light' ? '#23272f' : '#f6f7f9', padding: '0' }} />
           </div>
         </div>
       </nav>
